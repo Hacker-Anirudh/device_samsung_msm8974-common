@@ -85,6 +85,8 @@ BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
 BOARD_RAMDISK_USE_XZ := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 TARGET_KERNEL_SOURCE := kernel/samsung/msm8974
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/gcc16/bin/arm-unknown-eabihf-
+
 
 # Legacy memfd
 TARGET_HAS_MEMFD_BACKPORT := true
